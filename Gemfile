@@ -5,10 +5,14 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'puma', '~> 3.0'
 gem 'jquery-rails'
 gem 'devise'
-gem 'turbolinks', '~> 5'
+gem 'turbolinks', '~> 5.0.0'
 gem 'jbuilder', '~> 2.5'
 gem 'frontend-generators'
+gem 'sass-rails', '~> 5.0'
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.2'
 gem 'bootstrap-sass', '~> 3.3.6'
+gem 'simple_form'
 
 group :production do
 	gem 'pg'
@@ -16,12 +20,6 @@ end
 
 group :development do
 	gem 'sqlite3'
-end
-
-group :assets do
-	gem 'sass-rails', '~> 5.0'
-	gem 'uglifier', '>= 1.3.0'
-	gem 'coffee-rails', '~> 4.2'
 end
 
 group :development, :test do

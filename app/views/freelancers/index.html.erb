@@ -1,7 +1,11 @@
+<%if user_signed_in? %>
 <%= render "navigation" %>
 <%= render "header" %>
 <%= render "about" %>
 <%= render "portfolio" %>
 <%= render "memories" %>
 <%= render "footer" %>
-
+<%= render "navigation" %>
+<%else %>
+<%= render "access" %>
+<%end %>

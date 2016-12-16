@@ -23,7 +23,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #f05f40;
 }
 /*These are header components*/
 h1,
@@ -58,8 +58,8 @@ hr.star-primary:after {
     font-size: 2em;
 }
 
-hr.star-light {
-    border-color: #fff;
+#header hr.star-light {
+    border-color: #2c3e50;
 }
 
 hr.star-light:after {
@@ -73,7 +73,7 @@ hr.star-primary {
 
 hr.star-primary:after {
     color: #2c3e50;
-    background-color: #fff;
+    background-color: #016fb9;
 }
 
 .img-centered {
@@ -214,7 +214,8 @@ section.success a.active {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 600px;
+
 }
 
 #portfolio .portfolio-item .portfolio-link .caption {
@@ -278,7 +279,7 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #f05f40;
     background: #fff;
 }
 
@@ -331,7 +332,7 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #f05f40;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -468,7 +469,8 @@ footer .footer-below {
 }
 
 #portfolio {
-    background-color: #c6c5b9;
+    background-color: #fff;
+    padding-bottom: 75px;
 }
 
 section.success {
@@ -549,13 +551,18 @@ section.success {
 }
 
 .no-gutter > [class*=col-] {
+    padding-top: 75px;
     padding-right: 0;
     padding-left: 0;
 }
 
+.no-gutter2 > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
 #memories {
     background-color: #016fb9;
     color: #fff;
-    padding-top: 20px;
+    padding-top: 75px;
     padding-bottom: 0px;
 }
