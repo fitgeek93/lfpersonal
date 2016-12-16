@@ -2,17 +2,27 @@ source 'https://rubygems.org'
 
 #Gemlist
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
-gem 'sqlite3'
 gem 'puma', '~> 3.0'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'devise'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'frontend-generators'
 gem 'bootstrap-sass', '~> 3.3.6'
+
+group :production do
+	gem 'pg'
+end
+
+group :development do
+	gem 'sqlite3'
+end
+
+group :assets do
+	gem 'sass-rails', '~> 5.0'
+	gem 'uglifier', '>= 1.3.0'
+	gem 'coffee-rails', '~> 4.2'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
